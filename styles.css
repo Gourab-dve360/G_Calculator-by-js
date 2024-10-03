@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+
+
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 350px;
+  border-radius: 10px;
+  background-color: #d9dfd6;
+  
+}
+
+.preview_operation{
+  background-color: white;
+  min-height: 30px;
+  border-radius: 5px;
+  width: 80%;
+  padding: 5px;
+  margin: 20px auto;
+  
+}
+.screen{
+  width: 80%;
+  background-color: white;
+  margin:  20px auto;
+  padding: 15px;
+  text-align: end;
+  font-size: 2rem;
+  
+}
+
+.touches{
+  user-select: none;
+  padding: 30px;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.numeric-touches{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+
+.touch{
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+  text-align: center;
+  background-color: #333333;
+  color: white;
+}
+
+.press{
+  background-color: #868080 !important;
+}
+
+
+.operators{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.operator{
+  background-color: #fe9e09;
+}
+
+.zero{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: auto;
+  border-radius: 100px;
+}
+
+.delete{
+  background-color: #850000;
+}
